@@ -1,0 +1,212 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display:flex ;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(152, 0, 0);
+}
+/* Format the Navbar */
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+/* The hero image */
+.hero-image {
+    background-image: url('https://images.unsplash.com/photo-1585805152588-5beb7808255d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFyZW5hfGVufDB8fDB8fHww');
+    height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.site-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.site-main {
+    padding: 20px;
+    flex: 1; 
+}
+
+.welcome {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+
+}
+/* Style the events */
+.event {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: black 1px solid;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.events img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-self: center;
+}
+
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 15px; 
+    }
+}
+
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    background-color: rgb(152, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Menu Category Styling */
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    border: 1px solid  rgb(152, 0, 0);
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background-color: rgb(152, 0, 0);
+    color: white;
+}
+
+table td img {
+    border-radius: 8px;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Location Details Styling */
+.location-details {
+    margin-bottom: 40px;
+}
+
+.location-details h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.location-details p,
+.location-details ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hours {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+}
+
+.landmarks li  {
+    text-align: center;
+    list-style: none;
+}
+
+/* Map Section Styling */
+.map {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Menu Styling */
+.our-menu {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+/* Footer Style */
+footer {
+    background-color: rgb(152, 0, 0);
+    color: aliceblue;
+    padding: 10px 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
